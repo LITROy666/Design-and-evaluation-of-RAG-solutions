@@ -673,7 +673,7 @@ def create_duplicate_documents(aoai_client, model_deployment_name, company_name,
                 messages=[
                     {"role": "system", "content": prompt_topic}
                 ],
-                max_tokens=1000
+                max_tokens=10000
             )
             variant = response.choices[0].message.content
             print(variant)
